@@ -6,9 +6,6 @@ namespace TB_RPG_Project
     {
         public static void Main(string[] args)
         {
-            string hello = "hello";
-            
-            
             
         }
     }
