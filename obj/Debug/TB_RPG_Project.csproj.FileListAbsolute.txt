@@ -1,0 +1,6 @@
+C:\Users\karl_\Documents\C# Projects\TB_RPG_Project\TB_RPG_Project\bin\Debug\TB_RPG_Project.exe
+C:\Users\karl_\Documents\C# Projects\TB_RPG_Project\TB_RPG_Project\bin\Debug\TB_RPG_Project.pdb
+C:\Users\karl_\Documents\C# Projects\TB_RPG_Project\TB_RPG_Project\obj\Debug\TB_RPG_Project.csprojAssemblyReference.cache
+C:\Users\karl_\Documents\C# Projects\TB_RPG_Project\TB_RPG_Project\obj\Debug\TB_RPG_Project.csproj.CoreCompileInputs.cache
+C:\Users\karl_\Documents\C# Projects\TB_RPG_Project\TB_RPG_Project\obj\Debug\TB_RPG_Project.exe
+C:\Users\karl_\Documents\C# Projects\TB_RPG_Project\TB_RPG_Project\obj\Debug\TB_RPG_Project.pdb
