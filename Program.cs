@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net.Mime;
+using System.Reflection;
+using System.Reflection.Emit;
 using System.Threading;
 
 namespace TB_RPG_Project
@@ -9,13 +12,29 @@ namespace TB_RPG_Project
         {
             StoryManager storyManager = new StoryManager();
             
+            Title:
+            switch (storyManager.DrawTitle())
+            {
+                case 0:
+                    Console.WriteLine("Wrong Input. Please enter 1 or 2.\n" +
+                                      "Press any Key to return");
+                    Console.ReadKey();
+                    Console.Clear();
+                    goto Title;
+                case 1:
+                    storyManager.DrawIntroduction();
+                    break;
+                case 2:
+                    Environment.Exit(0);
+                    break;
+                default:
+                    break;
+            }
             
-             Console.WriteLine(storyManager.GetStoryText(1));
 
-
-
-             Console.ReadKey();
+            Console.ReadKey();
         }
 
+        
     }
 }

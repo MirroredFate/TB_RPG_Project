@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace TB_RPG_Project
 {
@@ -10,11 +11,24 @@ namespace TB_RPG_Project
         {
             _stories = new List<Story>();
             
+            //Adding all Stories
+            
+            //Title
+            var title = new Story("##################################\n" +
+                                  "########   TEXT BASED RPG   #######\n" +
+                                  "##################################\n" +
+                                  "\n" +
+                                  "[1] Start Game\n" +
+                                  "[2] Close Game", 0);
+            _stories.Add(title);
+            
             //1 - Introduction
-            Story introduction = new Story("Welcome to this World. \n" +
-                                           "This World will soon be destroyed...\n" +
-                                           "That's why you were called into this World.\n" +
-                                           "What's your name?", 1);
+            var introduction = new Story("#################################. \n" +
+                                            "# Welcome to this World.   #\n" +
+                                           "# This World will soon be destroyed...  #\n" +
+                                           "# That's why you were called into this World.   #\n" +
+                                           "# What's your name?         #\n" +
+                                            "###################################", 1);
             _stories.Add(introduction);
             
             //2 - Class Selection
@@ -31,6 +45,35 @@ namespace TB_RPG_Project
             }
 
             return "";
+        }
+
+        public int DrawTitle()
+        {
+            Console.WriteLine(GetStoryText(0));
+            int input;
+
+            if (int.TryParse(Console.ReadLine(), out input))
+            {
+                switch (input)
+                {
+                    case 1:
+                        Console.Clear();
+                        return 1;
+                    case 2:
+                        Console.Clear();
+                        return 2;
+                    default:
+                        return 0;
+                }
+            }
+
+            return 0;
+        }
+
+        public void DrawIntroduction()
+        {
+            Console.WriteLine(GetStoryText(1));
+            
         }
     }
 }
