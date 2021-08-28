@@ -12,12 +12,16 @@ namespace TB_RPG_Project
             switch (storyManager.DrawTitle())
             {
                 case 0:
-                    Console.WriteLine("Wrong Input. Please enter 1 or 2.\n" +
-                                      "Press any Key to return");
-                    Console.ReadKey();
                     Console.Clear();
+                    switch (storyManager.DrawSettings())
+                    {
+                        case 0:
+                            Console.Clear();
+                            break;
+                    }
                     goto Title;
                 case 1:
+                    Console.Clear();
                     storyManager.DrawIntroduction();
                     break;
                 case 2:

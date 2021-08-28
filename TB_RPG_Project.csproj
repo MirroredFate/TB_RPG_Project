@@ -38,7 +38,9 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="GameSettings.cs" />
         <Compile Include="Jobs.cs" />
+        <Compile Include="Language.cs" />
         <Compile Include="Player.cs" />
         <Compile Include="PlayerStats.cs" />
         <Compile Include="Program.cs" />
